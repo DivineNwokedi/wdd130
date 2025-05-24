@@ -1,14 +1,11 @@
-
-
 :root {
-    --primary-color: #3498db;
+    --primary-color: #ffffff;
     --secondary-color: #f1c40f;
-    --background-color: #f9f9f9;
+    --background-color: #ffffff;
     --text-color: #333;
 }
 
 body {
-    font-family: 'Calibri', sans-serif;
     margin: 0;
     padding: 20px;
     background-color: var(--background-color);
@@ -17,7 +14,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #070707;
     padding: 20px;
     text-align: center;
 }
@@ -35,7 +32,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #050505;
     text-decoration: none;
     margin: 10px;
 }
@@ -67,19 +64,6 @@ nav a {
     margin: 0;
 }
 
-article {
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-article img {
-    width: 400px;
-    height: auto;
-    margin: 20px;
-}
-
 .hero article {
     position: absolute;
     top: 50%;
@@ -88,19 +72,13 @@ article img {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     width: 80%;
-    display: flex;
-    align-items: center;
 }
 
 .hero article img {
     width: 200px;
     height: auto;
-    margin-right: 20px;
-    float: right; /* added float property */
-}
-
-.hero article p {
-    flex: 1;
+    margin: 0 0 10px 20px;
+    float: right;
 }
 
 section img {
@@ -132,6 +110,18 @@ figcaption {
 }
 
 .socialmedia a {
-    text-decoration: none; /* added to remove text decoration */
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
 }
 
