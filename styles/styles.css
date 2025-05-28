@@ -20,19 +20,30 @@
 }
 
 nav {
-  background-color: var(--primary-color);
-  padding: var(--standard-padding);
+  background-color: rgb(5, 13, 237);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav a {
-  color: var(--primary-text-color);
   display: block;
-  padding: var(--standard-padding-large);
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff; 
 }
 
 h1 {
-  color: var(--primary-color);
+  color: rgb(5, 13, 237);
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
+
+
 
 main img {
   width: 150px;
@@ -44,10 +55,6 @@ main img {
 
 p {
   padding: 0;
-}
-
-main {
-  max-width: var(--main-max-width);
 }
 
 aside {
@@ -68,5 +75,31 @@ aside img {
 footer {
   border-top: var(--footer-border-top);
   text-align: center;
+}
+
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+body {
+  background-color: #ffffff;
 }
 
