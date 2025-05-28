@@ -20,7 +20,7 @@ header {
 }
 
 header img {
-    width: 100px;
+    width: 150px;
     height: auto;
     margin: 10px;
 }
@@ -72,13 +72,18 @@ nav a {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.hero article p {
+    flex: 1;
 }
 
 .hero article img {
     width: 200px;
     height: auto;
-    margin: 0 0 10px 20px;
-    float: right;
+    margin-left: 20px;
 }
 
 section img {
@@ -115,11 +120,12 @@ figcaption {
 
 footer {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #333; /* Update text color to contrast with background */
     padding: 10px;
     text-align: center;
     clear: both;
 }
+
 
 footer p {
     margin: 0;
