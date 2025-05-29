@@ -12,6 +12,7 @@ body {
     color: var(--text-color);
 }
 
+
 header {
     background-color: var(--primary-color);
     color: #070707;
@@ -25,17 +26,39 @@ header img {
     margin: 10px;
 }
 
+header {
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+/* Right-aligned nav using grid */
 nav {
-    background-color: var(--primary-color);
-    padding: 10px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+  text-align: center;
+  justify-content: end; /* aligns the whole nav to the right */
 }
 
 nav a {
-    color: #050505;
-    text-decoration: none;
-    margin: 10px;
+  display: block;
+  padding: 0.75em 1.5em;
+  color: #050505;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
+
+nav a:hover {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
 
 .hero {
     position: relative;
