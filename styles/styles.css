@@ -1,0 +1,105 @@
+
+:root {
+  --primary-color: darkblue;
+  --primary-text-color: white;
+  --border-color: black;
+  --box-shadow-color: gray;
+  --aside-background-color: #eee;
+  --aside-text-color: #333;
+  --aside-border-color: rgb(0 0 0 / 0.2);
+  --main-max-width: 840px;
+  --aside-width: 20rem;
+  --aside-margin: 1rem;
+  --aside-padding: 1rem;
+  --img-border: 1px solid;
+  --img-padding: 2px;
+  --img-box-shadow: 0 0 30px;
+  --footer-border-top: 1px solid #000;
+  --standard-padding: 10px;
+  --standard-padding-large: 20px;
+}
+
+nav {
+  background-color: darkslategrey;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff; 
+}
+
+h1 {
+  color: darkslategrey;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+main img {
+  width: 150px;
+  height: auto;
+  border: var(--img-border) var(--border-color);
+  padding: var(--img-padding);
+  box-shadow: var(--img-box-shadow) var(--box-shadow-color);
+}
+
+p {
+  padding: 0;
+}
+
+aside {
+  width: var(--aside-width);
+  margin: var(--aside-margin);
+  border: 1px solid var(--aside-border-color);
+  padding: var(--aside-padding);
+  background-color: var(--aside-background-color);
+  color: var(--aside-text-color);
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  border-top: var(--footer-border-top);
+  text-align: center;
+}
+
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+body {
+  background-color: gainsboro;
+}
+
