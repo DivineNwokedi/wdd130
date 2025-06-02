@@ -1,68 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rapids | About Us</title>
-    <meta name="author" content="Divine Nwokedi">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Calibri:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rapids | About Us</title>
+        <meta name="author" content="Divine Nwokedi">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Calibri:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/rafting.css">
 
-</head>
+    </head>
 
 <body>
+
     <header>
-        <img src="images/z-crossedoars.jpeg" alt="Rapids Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+        <img src="images/z-crossedoars.jpeg" alt="Logo" style="width: 200px; height: 150px;">
+        <nav style="margin-left: auto;">
+            <ul style="display: flex; list-style: none; padding: 0; margin: 0; border: 1px solid #000; border-radius: 5px;">
+                <li style="padding: 10px; border-right: 1px solid #000; width: 100px; text-align: center;"><a href="#" style="text-decoration: none; color: #000;">Home</a></li>
+                <li style="padding: 10px; border-right: 1px solid #000; width: 100px; text-align: center;"><a href="#" style="text-decoration: none; color: #000;">About Us</a></li>
+                <li style="padding: 10px; border-right: 1px solid #000; width: 100px; text-align: center;"><a href="#" style="text-decoration: none; color: #000;">Trips</a></li>
+                <li style="padding: 10px; width: 100px; text-align: center;"><a href="#" style="text-decoration: none; color: #000;">Contact</a></li>
+            </ul>
         </nav>
     </header>
+
+
 
     <main>
         <div class="hero">
             <img src="images/rafting16_1024.jpg" alt="Rafting site">
-            <div class="hero-text">
-                <h1>Rapids</h1>
-            </div>
+            <h1>About Us</h1>
             <article>
+                <img src="images/rafting17_600.jpg" alt="Rafting image">
                 <p>Whitewater rafting is a type of recreation that involves navigating a non-motorized watercraft down
                     free flowing rivers. Rapids organizes trips, provides the watercraft, life jackets, etc., and
                     typically offers experienced guides to take passengers down a river. Our intent is to provide a
                     thrilling and safe experience to individuals and groups for a fee.</p>
-                <img src="images/rafting17_600.jpg" alt="Rafting site">
             </article>
         </div>
-
-        <section>
-            <h2>History</h2>
-            <div class="history-left">
-                <p>Rapids was founded in 2003 by a group of passionate outdoor enthusiasts who shared a love for
-                    whitewater rafting. Over the years, the company has grown and evolved, but its core mission has
-                    remained the same: to provide thrilling and safe experiences for individuals and groups on the
-                    world's most beautiful rivers.In its early years, Rapids focused on developing a reputation for
-                    safetyand excellence, investing </p>
-            </div>
-            <div class="history-image">
-                <img src="images/history-image.jpeg" alt="History Image">
-            </div>
-            <div class="history-right">
-                <p>in high-quality equipment and training its guides to the highest standards. As the company grew, it
-                    expanded its operations to new rivers and locations, always prioritizing the safety and satisfaction
-                    of its customers. Today, Rapids is a leading provider of whitewater rafting experiences, known for
-                    its expert guides, top-notch equipment, and unwavering commitment to safety and customer
-                    satisfaction. Known round the world</p>
+        <section class="History">
+            <h2 style="text-align: center;">History</h2>
+            <div class="history-container" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="history-left" style="width: 40%; text-align: justify; margin-right: 20px;">
+                    <p>Rapids was founded in 2003 by a group of passionate outdoor enthusiasts who shared a love for whitewater rafting. Over the years, the company has grown and evolved, but its core mission has remained the same: to provide thrilling and safe experiences for individuals and groups on the world's most beautiful rivers.In its early years, Rapids focused on developing a reputation for safetyand excellence, investing </p>
+                </div>
+                <div class="history-middle" style="width: 20%; text-align: center;">
+                    <img src="images/history-image.jpeg" alt="History Image" style="width: 100%; height: 190px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="history-right" style="width: 40%; text-align: justify; margin-left: 20px;">
+                    <p>in high-quality equipment and training its guides to the highest standards. As the company grew, it expanded its operations to new rivers and locations, always prioritizing the safety and satisfaction of its customers. Today, Rapids is a leading provider of whitewater rafting experiences, known for its expert guides, top-notch equipment, and unwavering commitment to safety and customer satisfaction. Known round the world</p>
+                </div>
             </div>
         </section>
-
         <section class="adventure">
-            <h2>Adventure Awaits You!</h2>
+            <h2 style="text-align: center;">Adventure Awaits You</h2>
             <div class="adventure-pictures">
                 <figure>
                     <img src="images/rafting20_600.jpg" alt="Grand Canyon">
@@ -90,8 +85,8 @@
     </main>
 
     <footer>
-        <p>©2025 Rapids | Divine Nwokedi</p>
-        <nav class="socialmedia">
+        <p>&copy;2025 Rapids | Divine Nwokedi</p>
+        <div class="social">
             <a href="https://facebook.com">
                 <img src="images/facebook.webp" alt="Facebook">
             </a>
@@ -101,7 +96,7 @@
             <a href="https://instagram.com">
                 <img src="images/instagram.webp" alt="Instagram">
             </a>
-        </nav>
+        </div>
     </footer>
 
 </body>
