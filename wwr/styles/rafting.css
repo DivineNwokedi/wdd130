@@ -29,16 +29,16 @@ header, main, footer{
 }
 
 header {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
 
-
 header .logo {
   width: 200px;
   height: 150px;
+  grid-column: 1;
 }
 
 main {
@@ -49,7 +49,7 @@ main {
 }
 
 nav {
-  margin-left: auto;
+  grid-column: 2;
   display: flex;
   justify-content: flex-end;
 }
