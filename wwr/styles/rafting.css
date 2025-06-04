@@ -29,12 +29,12 @@ header, main, footer{
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--primary-color);
 }
+
 
 header .logo {
   width: 200px;
@@ -48,27 +48,41 @@ main {
   padding: 2rem;
 }
 
+nav {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav ul {
+  display: flex;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
   padding: 0;
   margin: 0;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+nav li {
+  width: 100px; /* Take up equal width */
+  padding: 10px;
+  border-right: 1px solid #000;
+  text-align: center;
+}
+
+nav li:last-child {
+  border-right: none;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--text-color);
+  color: #000;
   transition: color 0.3s ease;
 }
 
+
 nav a:hover {
   color: var(--secondary-color);
-}
-
-nav li {
-  text-align: center;
 }
 
 .hero {
@@ -189,4 +203,8 @@ footer {
   width: 2rem;
   height: 2rem;
   margin: 0.5rem;
+}
+
+h2 {
+  text-align: center;
 }
