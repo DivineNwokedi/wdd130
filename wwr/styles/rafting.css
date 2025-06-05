@@ -281,3 +281,22 @@ h2 {
 .contact-form button[type="submit"]:hover {
     background-color: #555;
 }
+
+
+.additional-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.additional-images figure {
+    margin: 20px;
+    text-align: center;
+}
+
+.additional-images img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
