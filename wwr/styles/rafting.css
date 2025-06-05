@@ -61,6 +61,7 @@ nav ul {
   margin: 0;
   border: 1px solid #000;
   border-radius: 5px;
+  align-self: flex-end;
 }
 
 nav li {
