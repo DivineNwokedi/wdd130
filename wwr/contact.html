@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Calibri&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -34,37 +36,43 @@
             <iframe src="https://www.google.com/maps/embed?..."></iframe>
         </section>
         <section class="employee-profiles">
-            <h2>Meet Our Team</h2>
-            <figure>
-                <img src="images/employee1.jpeg" alt="Employee 1">
-                <figcaption>John Doe, Rafting Guide</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee2.webp" alt="Employee 2">
-                <figcaption>Jane Smith, Operations Manager</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee3.jpeg" alt="Employee 3">
-                <figcaption>Bob Jane, Safety Director</figcaption>
-            </figure>
+            <h2 class="section-heading">Meet Our Team</h2>
+            <div class="image-container">
+                <figure>
+                    <img src="images/employee1.jpeg" alt="Employee 1">
+                    <figcaption>John Doe, Rafting Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.webp" alt="Employee 2">
+                    <figcaption>Jane Smith, Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpeg" alt="Employee 3">
+                    <figcaption>Bob Jane, Safety Director</figcaption>
+                </figure>
+            </div>
         </section>
+
         <section class="additional-images">
-            <figure>
-                <img src="images/rafting16_1024.jpg" alt="Rafting Image 1">
-                <figcaption>Rafting Adventure</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting17_600.jpg" alt="Rafting Image 2">
-                <figcaption>Rafting Experience</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting19_600.jpg" alt="Rafting Image 3">
-                <figcaption>Rafting Fun</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting20_600.jpg" alt="Rafting Image 4">
-                <figcaption>Rafting Thrill</figcaption>
-            </figure>
+            <h2 class="section-heading">Rafting Images</h2>
+            <div class="image-container">
+                <figure>
+                    <img src="images/rafting16_1024.jpg" alt="Rafting Image 1">
+                    <figcaption>Rafting Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting17_600.jpg" alt="Rafting Image 2">
+                    <figcaption>Rafting Experience</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting19_600.jpg" alt="Rafting Image 3">
+                    <figcaption>Rafting Fun</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting20_600.jpg" alt="Rafting Image 4">
+                    <figcaption>Rafting Thrill</figcaption>
+                </figure>
+            </div>
         </section>
         <section class="contact-form">
             <h2>Get in Touch</h2>
@@ -73,7 +81,7 @@
                 <input type="text" id="name" name="name"><br><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email"><br><br>
-                <label for="purpose">Purpose:</label>
+                <label>Purpose:</label>
                 <input type="radio" id="general" name="purpose" value="General Inquiry">
                 <label for="general">General Inquiry</label>
                 <input type="radio" id="reservation" name="purpose" value="Reservation Question">
@@ -84,7 +92,7 @@
                 <textarea id="message" name="message"></textarea><br><br>
                 <input type="checkbox" id="newsletter" name="newsletter">
                 <label for="newsletter">Please subscribe me to the monthly newsletter!</label><br><br>
-                <button type="submit">Submit</button>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
@@ -95,4 +103,5 @@
         <p>&copy;2025 Rapids | Divine Nwokedi</p>
     </footer>
 </body>
+
 </html>
