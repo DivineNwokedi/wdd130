@@ -114,6 +114,8 @@ nav a:hover {
   white-space: nowrap;
 }
 
+
+
 .hero article {
   position: absolute;
   top: 30%;
@@ -191,17 +193,22 @@ nav a:hover {
   text-align: center;
 }
 
+
+
 footer {
   background-color: #cfcccc;
   padding: 1rem;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
+
 .social {
-  justify-self: end;
+  display: flex;
+  align-items: center;
 }
 
 .social img {
@@ -333,3 +340,99 @@ h1 {
   width: 200px;
   height: 150px;
 }
+
+.hero {
+  background-image: url('hero.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.trip {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.trip-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.trip img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero {
+    position: relative;
+}
+
+.home-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 36px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.newsletter {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+.call-to-action {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
